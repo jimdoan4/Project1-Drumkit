@@ -1,0 +1,84 @@
+html {
+    font-size: 10px;
+}
+
+.main {
+    background: url(https://images5.alphacoders.com/508/508283.jpg) bottom center;
+    background-size: cover;
+}
+
+img {
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+}
+
+body,
+html {
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* align text to center of page */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    color: rgb(161, 31, 31);
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0 0 .5rem black;
+}
+
+.notes {
+    display: flex;
+    flex: 1;
+    min-height: 67vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.note {
+    border-radius: 50%;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 8rem;
+    text-align: center;
+    color: white;
+    background: rgb(95, 29, 29);
+    text-shadow: 0 0 .5rem black;
+    box-shadow: 0 9px rgb(240, 236, 236);
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+/* changes color to red when hover */
+.note:hover {
+    background-color: rgb(209, 30, 30);
+}
+
+
+.note:active {
+    background-color: #f1f1f1;
+    box-shadow: 0 5px rgb(219, 217, 217);
+    transform: translateY(4px);
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
